@@ -6,9 +6,10 @@
 
 using namespace std;
 
-int n;
-double b, q;
-double GeoProgress(double b, double q, int n)
+int n = 0;
+int b = 0;
+int q = 0;
+double GeoProgress(int b, int q, int n)
 {
  if (n==1) return b;
  else return q*GeoProgress(b,q,n-1);
